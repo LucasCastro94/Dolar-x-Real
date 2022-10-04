@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backColor"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+        <ImageView
+            android:id="@+id/MainImageDolar"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/dolar"
+            android:scaleType="centerCrop"
+            />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de dolár x Real"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/darkGreen"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:hint="Informe o valor"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D5D6CB"
+            android:id="@+id/edittext_value"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Converter de"
+        android:padding="16dp"
+        android:layout_marginBottom="2dp"
+
+        >
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/spin_from"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="0.00"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"/>
+
+
+
+
+<com.google.android.material.progressindicator.CircularProgressIndicator
+   android:id="@+id/progress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:max="100"
+    android:visibility="invisible"
+    android:layout_gravity="center"
+    app:indicatorColor="#2ECAE4"
+    app:trackColor="@color/white"
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/darkGreen"
+        app:cornerRadius="90dp"
+        android:text="Converter"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/img_dolarVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@drawable/ic_baseline_south_24"
+           />
+
+
+        <TextView
+            android:id="@+id/text_dolarVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teste"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

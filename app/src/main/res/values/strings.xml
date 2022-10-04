@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dolar x Real</string>
+    <string-array name="valuesCoins">
+        <item>Dolar x Real</item>
+        <item>Real x Dolar</item>
+    </string-array>
+</resources>
